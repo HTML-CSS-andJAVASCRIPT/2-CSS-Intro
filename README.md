@@ -71,9 +71,15 @@ Selectores simples
        [atributo|=valor]
 
 Selectores compuestos
-- selectores agrupados
-- selectores combinadores
-- Pseudoclaases
+- selectores agrupados -> se agrupan por comas
+- selectores combinadores 
+     selectores descendientes
+     selector de hermano siguiente +
+     selector de hermano siguientes ~
+
+
+
+- Pseudoclases
 
 ## Selectores elementales
 ### Selector universal `*`
@@ -143,4 +149,42 @@ Y en el archivo `styles.css` con la  `#` y el nombre del indentificador cambiamo
     background-color:blue;
 }
 
+~~~
+
+### Selector agrupado
+Se agrupan por `,` y solo se describe una sola vez.
+~~~css
+.text,
+.text-2,
+.text-3,
+.text-4{
+    background-color: greenyellow;
+}
+~~~
+### Selector descendente
+Se separan por espacios.
+~~~css
+div .title-2{
+    background-color: hotpink;
+}
+~~~
+
+### Selector de hermano y hermanos
+`+` -> Selecciona al hermano siguiente adyacente
+`~` -> Selecciona a todos los hermanos siguientes
+~~~css
+.text-2 +.title-2 {
+    background-color:gray;
+
+}
+.text-2 ~ .text span{
+    background-color: grey;
+}
+~~~
+### Selector de hijo directo
+Selecciona solo los hijos directos
+~~~css
+.container > p{
+    background-color: tomato;
+}
 ~~~

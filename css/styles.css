@@ -23,8 +23,29 @@ li{
 .title{
     background-color: cyan;
 }
-.text{
-    background-color: red;
+.text,
+.text-2,
+.text-3,
+.text-4{
+    background-color: greenyellow;
+}
+/*
+.title-2{
+    background-color: hotpink;
+}
+*/
+div .title-2{
+    background-color: hotpink;
+}
+.text-2 +.title-2 {
+    background-color:gray;
+
+}
+.text-2 ~ .text span{
+    background-color: grey;
+}
+.container > p{
+    background-color: tomato;
 }
 [href]{
     background-color: gray;
