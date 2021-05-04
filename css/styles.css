@@ -1,3 +1,28 @@
-body{
+
+/*Selector: */
+/*
+*{
     background-color:aqua;
+}
+h1 {
+    background-color: green;
+}
+p {
+    background-color: lightcoral;
+}
+ul{
+    background-color: red;
+}
+li{
+    background-color: blueviolet;
+}
+*/
+#title{
+    background-color: blueviolet;
+}
+.title{
+    background-color: cyan;
+}
+.text{
+    background-color: red;
 }
