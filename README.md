@@ -63,6 +63,12 @@ Selectores simples
   - id -> id del elemento
   - clase -> clase del elemento
   - otros atributos.
+       [atributo]
+       [atributo=valor]
+       [atributo^=valor]
+       [atributo*=valor]
+       [atributo$=valor]
+       [atributo|=valor]
 
 Selectores compuestos
 - selectores agrupados
@@ -107,4 +113,34 @@ Y en el archivo `styles.css` con la  `#` y el nombre del indentificador cambiamo
 .title{
     background-color: cyan;
 }
+~~~
+### Selector de atributo
+~~~html
+<a href="https://www.youtube.com/">youtube</a>
+    <a href="color-modo-random">color random</a>
+    <a href="#seccion-verde">color verde</a>
+    <a href="color-rojo">color rojo</a>
+    <p lang="es">Lorem ipsum</p>
+~~~
+~~~css
+[href]{
+    background-color: gray;
+}
+[href="https://www.youtube.com/"]
+{
+    background-color: darkorange;
+}
+[href^="color"]{
+    background-color:greenyellow;
+}
+[href*="modo"]{
+    background-color:green;
+}
+[href$="rojo"]{
+    background-color:red;
+}
+[lang|="es"]{
+    background-color:blue;
+}
+
 ~~~

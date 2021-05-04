@@ -26,3 +26,22 @@ li{
 .text{
     background-color: red;
 }
+[href]{
+    background-color: gray;
+}
+[href="https://www.youtube.com/"]
+{
+    background-color: darkorange;
+}
+[href^="color"]{
+    background-color:greenyellow;
+}
+[href*="modo"]{
+    background-color:green;
+}
+[href$="rojo"]{
+    background-color:red;
+}
+[lang|="es"]{
+    background-color:blue;
+}
