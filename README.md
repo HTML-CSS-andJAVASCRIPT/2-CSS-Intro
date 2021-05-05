@@ -1,5 +1,12 @@
 # CSS: 1-Intro
 
+1. [Conectar HTML Y CSS](#schema1)
+2. [Sintaxis de CSS](#schema2)
+3. [Tipos de selectores](#schema3)
+<hr>
+
+<a name="schema1"></a>
+
 # 1 Conectar HTML Y CSS
 - Primera opción:
 Esta es la mejor opción.
@@ -37,6 +44,10 @@ No usar nunca, si se puede evitar. Porque tiene un retardo a la hora de cargar l
     </style>
 ~~~
 
+<hr>
+
+<a name="schema2"></a>
+
 # 2 Sintaxis de CSS
 Selector: Elemento al que le vamos aplicar la propiedad.
 
@@ -53,6 +64,9 @@ body{
     background-color:aqua;
 }
 ~~~
+<hr>
+
+<a name="schema3"></a>
 
 # 3 Tipos de selectores
 Selectores simples
@@ -150,7 +164,7 @@ Y en el archivo `styles.css` con la  `#` y el nombre del indentificador cambiamo
 }
 
 ~~~
-
+## Selectores compuestos
 ### Selector agrupado
 Se agrupan por `,` y solo se describe una sola vez.
 ~~~css
